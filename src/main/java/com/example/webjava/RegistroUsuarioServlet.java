@@ -2,7 +2,9 @@ package com.example.webjava;
 
 import java.io.*;
 
+import com.webjava.registropersonas.controller.UsuarioController;
 import com.webjava.registropersonas.model.Usuario;
+import com.webjava.registropersonas.model.data.DBGenerator;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
@@ -26,8 +28,8 @@ public class RegistroUsuarioServlet extends HttpServlet{
             String nombre = req.getParameter("nombre");
             String rut = req.getParameter("rut");
             int edad = Integer.parseInt(req.getParameter("edad"));
-            Usuario usuario = new Usuario(nombre, rut,edad);
-            RequestDispatcher respuesta = req.getRequestDispatcher("/index.jsp");
+            // DA ERROR UsuarioController.registrarUsuario(nombre,rut,edad);
+            RequestDispatcher respuesta = req.getRequestDispatcher("/registroCorrecto.jsp");
             respuesta.forward(req,resp);
 
         }

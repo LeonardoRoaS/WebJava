@@ -11,8 +11,10 @@
     <div class="centrado">
         <label>Nombre:</label>
         <input type="text" name="nombre" class="campoTexto">
+        <br>
         <label>RUT:</label>
         <input type="text" name="rut" class="campoTexto">
+        <br>
         <label>Edad:</label>
         <input type="number" name="edad" class="campoTexto">
         <br><br>
